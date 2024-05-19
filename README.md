@@ -1,4 +1,5 @@
-![DBReader](https://github.com/Belhassennn/ETL/assets/169060450/f2ea6368-a16e-4fcc-a70d-48603a4cdf79)
+
+
 # Projet ETL - Analyse de Parties d'Échecs de Lichess.org
 
 ## Objectif du Projet
@@ -123,7 +124,7 @@ Ce guide structuré garantit un traitement efficace et une intégration des donn
 
 
 
-
+![final](https://github.com/Belhassennn/ETL/assets/169060450/6ce40573-e047-4178-b273-651d38553acd)
 
 
 
