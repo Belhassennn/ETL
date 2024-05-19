@@ -1,13 +1,13 @@
 # ETL
-Votre projet implique le traitement d'un jeu de données de parties d'échecs de Lichess.org, la division de ces données en deux parties, l'importation d'une partie dans une base de données MySQL, puis la combinaison des deux parties pour une analyse ultérieure. Voici un guide détaillé et structuré du workflow complet, basé sur les étapes mentionnées :
+Ce projet implique le traitement d'un jeu de données de parties d'échecs de Lichess.org, la division de ces données en deux parties, l'importation d'une partie dans une base de données MySQL, puis la combinaison des deux parties pour une analyse ultérieure. Voici un guide détaillé et structuré du workflow complet, basé sur les étapes mentionnées :
 
-#1. Compréhension du Projet
+##1. Compréhension du Projet
 Objectif :
 
 Utiliser les enregistrements de parties d'échecs de Lichess.org pour l'analyse.
 Traiter les données, y compris la concaténation de différentes parties du jeu de données.
 S'assurer que les données sont divisées, traitées et stockées correctement.
-#2. Compréhension des Données
+##2. Compréhension des Données
 Aperçu du Jeu de Données :
 
 Nombre de lignes : 20058
@@ -61,7 +61,7 @@ Configuration du MySQL Connector :
 Configurez les détails de connexion pour votre base de données MySQL.
 Nœud DB Writer :
 Utilisez le nœud DB Writer pour écrire les données de second_part.csv dans la base de données MySQL.
-#4. Modélisation
+##4. Modélisation
 Extraction de Données de Différentes Sources :
 
 Fichier CSV :
@@ -79,11 +79,11 @@ Configurez-le pour lire les données de la table MySQL où second_part.csv a ét
 Concaténation :
 
 Utilisez le nœud Concatenate pour combiner les sorties des nœuds CSV Reader et DB Reader.
-#5. Évaluation
+##5. Évaluation
 Validation :
 
 Assurez-vous que le nombre de lignes dans le jeu de données concaténé est égal au nombre de lignes dans le jeu de données original (20058 lignes).
-#6. Déploiement
+##6. Déploiement
 Excel Writer :
 
 Ajoutez un nœud Excel Writer dans KNIME.
@@ -100,8 +100,8 @@ Configuration du DB Writer :
 
 Schéma et table de sortie : Spécifiez le schéma et le nom de la table dans la base de données MySQL.
 Colonnes à inclure : Sélectionnez les colonnes nécessaires.
-Workflow Final
-Workflow KNIME :
+##orkflow Final
+###Workflow KNIME :
 
 Commencez avec le nœud CSV Reader pour first_part.csv.
 Utilisez les nœuds MySQL Connector et DB Writer pour importer second_part.csv dans MySQL.
