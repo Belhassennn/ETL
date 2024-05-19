@@ -1,7 +1,7 @@
 # ETL
 Ce projet implique le traitement d'un jeu de données de parties d'échecs de Lichess.org, la division de ces données en deux parties, l'importation d'une partie dans une base de données MySQL, puis la combinaison des deux parties pour une analyse ultérieure. Voici un guide détaillé et structuré du workflow complet, basé sur les étapes mentionnées :
 
-##1. Compréhension du Projet
+###1. Compréhension du Projet
 Objectif :
 
 Utiliser les enregistrements de parties d'échecs de Lichess.org pour l'analyse.
